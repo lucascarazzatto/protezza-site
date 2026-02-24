@@ -1,0 +1,287 @@
+.produtos img{max-width:100%;height:auto;}
+.produtos div{border: 1px solid #ccc;padding:20px;margin:30px;box-shadow: 0 2px 8px rgba(0,0,0,0.1);}
+.produtos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:20px;
+}
+
+header{margin:0px;}
+header h1{color:#1f3c88;font-size:3rem;margin:0;} 
+  
+.slogan{display:flex;margin:0px;gap:0.5rem;padding:0.05rem}
+.slogan img{max-width:8%;height:auto;}
+
+.contatoheader{margin-top:1.5rem;margin-right:2rem; text-align:right;width:100%;color:#1f3c88;font-size:1.5rem;}
+
+
+.nossos h1{font-size:2rem;margin-left:50px;}
+.nossos p{font-size:1rem;margin-left:50px;}
+.nossos{background-color:#f2f2f2;
+margin: 0 auto;}
+
+.produtos{background-color:#ffffff;}
+.produtos div{background-color:#f2f2f2;}
+
+
+
+.container{display:grid;
+
+grid-template-areas:
+"header"
+"nossos"
+"main";
+gap:0.005rem;}
+header{grid-area:header;}
+.nossos{grid-area:nossos;}
+main{grid-area:main;}
+
+
+
+.menu ul{list-style:none;display:flex;justify-content:center;margin:0;padding:0;width:100%;}
+.menu a{text-decoration:none;color:white;display:block;}
+.menu li.ativo a{border-bottom: 1px solid white;
+}
+.menu li {
+  transition: 0.3s;
+}
+
+.menu li:hover {
+  background: linear-gradient(to right, #126A96, #167EB3);
+}
+
+.voltar a{display:flex;gap:0.1rem;}
+.voltar a div{border: 1px solid white;width:1rem;border-radius:50%;display:flex;justify-content:center;align-items:center;padding:0px;font-size:0.85rem;}
+
+
+
+.teste{display:flex;align-items:center;line-height:1;margin-right:4.5rem;}
+.voltar{display:flex;align-items:center;padding:7px;line-height:1;}
+
+.voltar:hover {
+  background: linear-gradient(to right, #126A96, #167EB3);
+  transition: 0.3s;
+}
+
+
+.menu li{
+  display: flex;
+ 
+  align-items: center;
+  padding:7px;
+ background: linear-gradient(to right, #167EB3, #1E88C4);
+ }
+
+.menu{background: linear-gradient(to right, #167EB3, #1E88C4);}
+
+
+
+
+.produtos luvas img{max-width:100%;height:auto;}
+.produtos luvas div{border: 1px solid #ccc;padding:20px;margin:30px;}
+.produtos luvas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:20px;
+}
+.produtos luvas p{text-align:right;}
+
+.especificos img{max-width:100%;height:auto;height:30rem;margin-left:5rem;margin-top:2rem;}
+.especificos{display:flex;gap:5rem;margin:0px;}
+.especificos div{margin-top:1px;padding:0px;}
+
+button {
+  padding: 12px;
+  border: none;
+  background-color: #444;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #222;
+}
+button:active {
+  transform: scale(0.98);
+}
+
+.barra-pesquisa {
+  display: flex;
+   margin: 0.5rem 0; 
+}
+ 
+.barra-pesquisa input {
+  width: 25rem; 
+  padding:0.3rem 0.6rem; 
+  border: 0.0625rem solid #ccc; 
+  border-right: none;
+  border-radius: 0.5rem 0 0 0.5rem; 
+  font-size: 0.9rem;
+  outline: none;
+  
+}
+
+.barra-pesquisa button {
+  padding: 0.3rem 0.8;
+  border: 0.0625rem solid #1E88C4;
+  background-color: #1E88C4;
+  color: white;
+  border-radius: 0 0.5rem 0.5rem 0;
+  cursor: pointer;
+  
+  font-size: 1.2rem;
+  transition: 0.2s ease;
+}
+
+.barra-pesquisa button:hover {
+  background-color: #167EB3;
+}
+
+.barra-pesquisa input,
+.barra-pesquisa button {
+  line-height: 1;
+}
+
+
+
+.resultado-item {
+    padding: 10px 14px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.2s ease;
+}
+
+.resultado-item {
+    padding: 10px 14px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.2s ease;
+}
+
+.parte-digitada {
+    font-weight: 700;
+    color: #1565C0;
+}
+
+.resultado-item:hover {
+    background-color: #e8e8e8;
+}
+
+.corbusca{background-color: #f2f2f2;
+margin-bottom:1rem;width: 25rem;}
+
+button a{text-decoration:none;color:white;}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1rem;
+}
+
+h1 { font-size: 2.2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.5rem; }
+
+p {
+    margin-bottom: 1rem;font-size:1rem;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+
+/* ========================= */
+/* RESPONSIVIDADE */
+/* ========================= */
+
+@media (max-width: 1024px) {
+  .produtos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .especificos {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .especificos img {
+    margin-left: 0;
+    height: auto;
+    max-height: 25rem;
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* HEADER */
+  header h1 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .slogan {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contatoheader {
+    text-align: center;
+    margin-right: 0;
+    font-size: 1.1rem;
+  }
+
+  /* MENU */
+  .menu ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu li {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* PRODUTOS */
+  .produtos {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .produtos div {
+    margin: 10px;
+  }
+
+  /* BARRA DE PESQUISA */
+  .barra-pesquisa {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .barra-pesquisa input {
+    width: 100%;
+    border-radius: 0.5rem;
+    border-right: 0.0625rem solid #ccc;
+    margin-bottom: 0.5rem;
+  }
+
+  .barra-pesquisa button {
+    width: 100%;
+    border-radius: 0.5rem;
+  }
+
+  .corbusca {
+    width: 100%;
+  }
+
+  /* TEXTOS */
+  h1 { font-size: 1.6rem; }
+  h2 { font-size: 1.4rem; }
+  h3 { font-size: 1.2rem; }
+
+  p {
+    font-size: 0.95rem;
+  }
+
+}
