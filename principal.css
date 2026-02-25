@@ -77,14 +77,14 @@ main{grid-area:main;}
 
 
 
-.produtos luvas img{max-width:100%;height:auto;}
-.produtos luvas div{border: 1px solid #ccc;padding:20px;margin:30px;}
-.produtos luvas {
+.produtossecundarios img{max-width:100%;height:auto;}
+.produtossecundarios div{border: 1px solid #ccc;padding:20px;margin:30px;}
+.produtossecundarios {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap:20px;
 }
-.produtos luvas p{text-align:right;}
+.produtossecundarios p{text-align:right;}
 
 .especificos img{max-width:100%;height:auto;height:30rem;margin-left:5rem;margin-top:2rem;}
 .especificos{display:flex;gap:5rem;margin:0px;}
@@ -122,7 +122,7 @@ button:active {
 }
 
 .barra-pesquisa button {
-  padding: 0.3rem 0.8;
+  padding: 0.3rem 0.8rem;
   border: 0.0625rem solid #1E88C4;
   background-color: #1E88C4;
   color: white;
@@ -219,22 +219,28 @@ img {
   header h1 {
     font-size: 1.8rem;
     text-align: center;
+    
   }
 
   .slogan {
-    flex-direction: column;
+    flex-direction:row;
     align-items: center;
+    margin:0.5rem;
+    margin-left:0;
   }
+.slogan img{max-width:11%;}
 
   .contatoheader {
-    text-align: center;
+    text-align:right;
     margin-right: 0;
     font-size: 1.1rem;
+   margin-top:0;
+  
   }
 
   /* MENU */
   .menu ul {
-    flex-direction: column;
+    flex-direction:row;
     align-items: center;
   }
 
@@ -242,6 +248,7 @@ img {
     width: 100%;
     justify-content: center;
   }
+
 
   /* PRODUTOS */
   .produtos {
@@ -285,3 +292,230 @@ img {
   }
 
 }
+
+
+/* ======CSS genérico para Home criado por IA====== */
+
+/* ====== BASE ====== */
+
+.hh-main {
+    width: 100%;
+}
+
+.hh-container,
+.hh-hero-container,
+.hh-cta-container {
+    width: 90%;
+    max-width: 75rem; /* ~1200px */
+    margin: 0 auto;
+}
+
+/* ====== HERO ====== */
+
+.hh-hero {
+    padding: 4rem 0;
+    background: #f4f6f8;
+}
+
+.hh-hero-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.hh-hero-content {
+    width: 100%;
+}
+
+.hh-hero-buttons {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.hh-hero-image {
+    width: 100%;
+    text-align: center;
+}
+
+.hh-img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ====== BOTÕES ====== */
+
+.hh-btn {
+    padding: 0.8rem 1.4rem;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 0.3rem;
+    transition: 0.3s ease;
+    text-align: center;
+}
+
+.hh-btn-primary {
+    background: #1f2937;
+    color: #ffffff;
+}
+
+.hh-btn-primary:hover {
+    opacity: 0.85;
+}
+
+.hh-btn-secondary {
+    background: #e5e7eb;
+    color: #111827;
+}
+
+.hh-btn-secondary:hover {
+    opacity: 0.85;
+}
+
+/* ====== AUTORIDADE ====== */
+
+.hh-authority {
+    padding: 4rem 0;
+    background: #ffffff;
+}
+
+.hh-authority-grid {
+    display: grid;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.hh-authority-item {
+    padding: 1.5rem;
+    background: #f9fafb;
+    border-radius: 0.4rem;
+    text-align: center;
+}
+
+/* ====== PRODUTOS ====== */
+
+.hh-products {
+    padding: 4rem 0;
+    background: #f4f6f8;
+}
+
+.hh-products-grid {
+    display: grid;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.hh-product-card {
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 0.4rem;
+    transition: 0.3s ease;
+}
+
+.hh-product-card:hover {
+    transform: translateY(-0.3rem);
+}
+
+.hh-product-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.hh-product-link {
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 0.8rem;
+    transition: 0.3s ease;
+}
+
+.hh-product-link:hover {
+    opacity: 0.7;
+}
+
+/* ====== DIFERENCIAIS ====== */
+
+.hh-differentials {
+    padding: 4rem 0;
+    background: #ffffff;
+}
+
+.hh-differentials-grid {
+    display: grid;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.hh-differential-item {
+    padding: 1.5rem;
+    background: #f9fafb;
+    border-radius: 0.4rem;
+}
+
+/* ====== CTA FINAL ====== */
+
+.hh-cta {
+    padding: 4rem 0;
+    background: #1f2937;
+    color: #ffffff;
+    text-align: center;
+}
+
+.hh-cta-container {
+    max-width: 50rem;
+}
+
+.hh-cta .hh-btn-primary {
+    margin-top: 1.5rem;
+    display: inline-block;
+}
+
+/* ====== TABLET ====== */
+
+@media (min-width: 48rem) {
+
+    .hh-hero-container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .hh-hero-buttons {
+        flex-direction: row;
+    }
+
+    .hh-authority-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hh-products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hh-differentials-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ====== DESKTOP ====== */
+
+@media (min-width: 64rem) {
+
+    .hh-authority-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .hh-products-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .hh-differentials-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+
+
+
