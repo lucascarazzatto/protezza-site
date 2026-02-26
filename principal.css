@@ -1,10 +1,22 @@
 .produtos img{max-width:100%;height:auto;}
-.produtos div{border: 1px solid #ccc;padding:20px;margin:30px;box-shadow: 0 2px 8px rgba(0,0,0,0.1);}
+.produtos div{border: 1px solid #ccc;padding:20px;padding-bottom:1px;margin:30px;box-shadow: 0 2px 8px rgba(0,0,0,0.1);text-align:center;}
 .produtos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap:20px;
 }
+.produtos{background-color:#ffffff;}
+.produtos div{background-color:#f2f2f2;}
+
+.produtos div p{font-size:1.3rem;}
+.produtos div:hover {
+  background-color:#dddddd;
+  transition: 0.3s;
+}
+
+
+
+
 
 header{margin:0px;}
 header h1{color:#1f3c88;font-size:3rem;margin:0;} 
@@ -16,12 +28,10 @@ header h1{color:#1f3c88;font-size:3rem;margin:0;}
 
 
 .nossos h1{font-size:2rem;margin-left:50px;}
-.nossos p{font-size:1rem;margin-left:50px;}
+.nossos p{font-size:1rem;margin-left:3.125rem;margin-right:3.125rem;}
 .nossos{background-color:#f2f2f2;
 margin: 0 auto;}
 
-.produtos{background-color:#ffffff;}
-.produtos div{background-color:#f2f2f2;}
 
 
 
@@ -78,17 +88,30 @@ main{grid-area:main;}
 
 
 .produtossecundarios img{max-width:100%;height:auto;}
-.produtossecundarios div{border: 1px solid #ccc;padding:20px;margin:30px;}
+.produtossecundarios div{border: 1px solid #ccc;padding:20px;margin:30px;background-color:#f2f2f2;box-shadow: 0 2px 8px rgba(0,0,0,0.1);}
 .produtossecundarios {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap:20px;
 }
-.produtossecundarios p{text-align:right;}
+.produtossecundarios p{text-align:center;}
+.produtossecundarios div:hover {
+  background-color:#dddddd;
+  transition: 0.3s;
+}
+
+
+
 
 .especificos img{max-width:100%;height:auto;height:30rem;margin-left:5rem;margin-top:2rem;}
 .especificos{display:flex;gap:5rem;margin:0px;}
 .especificos div{margin-top:1px;padding:0px;}
+
+.especificos button {
+    display: block;
+    margin: 1.5rem auto;
+}
+
 
 button {
   padding: 12px;
@@ -152,15 +175,16 @@ button:active {
     border-radius: 8px;
     transition: 0.2s ease;
 }
+.resultado-item:hover {
+    background-color: #e8e8e8;
+}
+
 
 .parte-digitada {
     font-weight: 700;
     color: #1565C0;
 }
 
-.resultado-item:hover {
-    background-color: #e8e8e8;
-}
 
 .corbusca{background-color: #f2f2f2;
 margin-bottom:1rem;width: 25rem;}
@@ -206,10 +230,10 @@ img {
     height: auto;
     max-height: 25rem;
   }
-}
+
 .produtossecundarios{grid-template-columns: repeat(2, 1fr);
   }
-
+}
 
 @media (max-width: 768px) {
 
@@ -241,6 +265,9 @@ img {
     flex-direction:row;
     align-items: center;
   }
+
+.nossos p{margin-left:1.25rem;margin-right:1.25rem;}
+.nossos h1{margin-left:1.25rem;margin-right:1.25rem;}
 
   .menu li {
     width: 100%;
