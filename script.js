@@ -11,11 +11,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const paginas = [
         { nome: "Home", url: "index.html", palavrasChave: ["home", "inicio"] },
-        { nome: "Produtos", url: "produtos.html", palavrasChave: ["produtos", "produto"] },
-        { nome: "Contatos", url: "contatos.html", palavrasChave: ["contato", "contatos"] },
-        { nome: "Localização", url: "localizacao.html", palavrasChave: ["localizacao", "localização"] },
+        { nome: "Produtos", url: "produtos.html", palavrasChave: [ "produto"] },
+        { nome: "Contatos", url: "contatos.html", palavrasChave: ["contato"] },
+        { nome: "Localização", url: "localizacao.html", palavrasChave: ["localizacao", "localizaçoe"] },
         { nome: "Luvas", url: "luvas.html", palavrasChave: ["luva", "luvas"] },
-        { nome: "Luvas Térmicas", url: "luvas-termicas.html", palavrasChave: ["luvas termicas", "luva termica"] },
+        { nome: "Luvas Térmicas", url: "luvas-termicas.html", palavrasChave: ["luva termica"] },
         { nome: "Capacete Industrial", url: "capacete.html", palavrasChave: ["capacete", "industrial", "viseira"] }
     ];
 
@@ -38,15 +38,19 @@ const palavrasIgnoradas = [
     "para", "por", "com", "sem",
     "e", "ou", "a", "o", "as", "os"
 ];
+
 function palavraCorresponde(buscaPalavra, chavePalavra) {
     if (!buscaPalavra || !chavePalavra) return false;
 
     // correspondência exata
     if (buscaPalavra === chavePalavra) return true;
 
-    // plural simples (adiciona/remove 's')
+    // plural simples
     if (buscaPalavra + "s" === chavePalavra) return true;
     if (buscaPalavra === chavePalavra + "s") return true;
+
+    // 🔥 NOVO: começa com
+    if (chavePalavra.startsWith(buscaPalavra)) return true;
 
     return false;
 }
